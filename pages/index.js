@@ -4,7 +4,12 @@ import { OurMission } from "../components/OurMission.tsx";
 import LandingSection from "../components/LandingSection.tsx";
 import { EventsSlider } from "../components/EventsSlider.tsx";
 import { OurFields } from "../components/OurFields.tsx";
+import { OurSpheres } from "../components/OurSpheres.tsx";
+import { Explanation } from "../components/Explanation.tsx";
+import { Footer } from "../components/Footer.tsx";
+import { OurClients } from "../components/OurClients.tsx";
 import Navbar from "../components/Navbar.tsx";
+import { Facebook } from "@mui/icons-material";
 import "swiper/css";
 
 export default function Home() {
@@ -66,6 +71,27 @@ export default function Home() {
           {Fields.map((e, i) => (
             <OurFields title={e?.title} cards={e?.cards} key={i} />
           ))}
+        </div>
+      </div>
+      <OurSpheres />
+      <Explanation />
+      <OurClients />
+      <Footer />
+      <div className="flex flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between text-black py-5 gap-5 sm:px-10 border-t border-gray-200">
+        <div>Copyright © 2022 VEEZEN Powered by VEEZEN</div>
+        <div className="flex flex-row gap-4">
+          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+            <Facebook />
+          </div>
+          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+            <Facebook />
+          </div>
+          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+            <Facebook />
+          </div>
+          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+            <Facebook />
+          </div>
         </div>
       </div>
     </div>

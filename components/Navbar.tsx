@@ -46,17 +46,16 @@ const Navbar = () => {
         </div>
         <div></div>
       </div>
-
-      <IconButton
-        className="flex sm:hidden w-16 flex-row justify-center items-center"
-        onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-          console.log("click");
-          handleClick(e);
-        }}
-      >
-        <MenuIcon className="text-white opacity-70" />
-      </IconButton>
-
+      <div className="flex sm:hidden w-16 flex-row justify-center items-center">
+        <IconButton
+          onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+            console.log("click");
+            handleClick(e);
+          }}
+        >
+          <MenuIcon className="text-white opacity-70" />
+        </IconButton>
+      </div>
       <Menu
         anchorEl={anchorEl}
         onClose={handleClose}
