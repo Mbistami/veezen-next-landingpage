@@ -20,13 +20,20 @@ export const EventsSlider = () => {
       </div>
       <Swiper className="mySwiper " style={{ height: "100%" }}>
         <SwiperSlide>
-          <InnerCard />
+          <InnerCard
+            title="Vee-Breakfast"
+            text="Veezen organise toutes les deux semaines un #VeeBreakfast . Cette fois-ci, nous l'organiserons au café Dupont Vendredi 22/07 . L'événement réunit les #coachs veezen qui exposent les techniques de #coaching d'une façon ludique et passionante ils discutent des sujets qui touchent les problématiques des entreprises. Les invités de cet événement sont des responsables des ressources humaines ou des chefs d'entreprise qui assistent au intitulés déjeuner convivial et partent avec beaucoup de savoir sur ce qu'apporte le développement personnel, la connaissance de soi et les méthodes de management moderne ."
+            src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658364100/Capture_q9bylh.png"
+            date="22.07.2022."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <InnerCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <InnerCard />
+          <InnerCard
+            title="Vee-Coaching"
+            text="Veezen vous offre votre première séance de coaching individuel. Une chance unique de découvrir Veezen et ses Veexperts certifiés qui seront là pour vous aider et vous écouter."
+            src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658364377/Capture_xuts3r.png"
+            date="24.05.2022."
+          />
         </SwiperSlide>
       </Swiper>
     </div>
