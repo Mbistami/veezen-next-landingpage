@@ -12,7 +12,7 @@ export const InnerCard = ({ src, text, title, date }) => {
           </h1>
           <div className="flex flex-col-reverse sm:flex-row-reverse w-full items-center justify-center gap-10">
             <div className="m-0 w-full md:w-1/2 px-10 sm:px-3 text-left">
-              <p className="  font-nunito text-xs sm:text-xl text-left">
+              <p className="  font-nunito text-[10px] sm:text-xl text-left">
                 {text}
               </p>
               <div className="flex flex-row justify-between items-center mt-16">
