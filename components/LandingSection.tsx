@@ -7,7 +7,17 @@ import { TripleWeaves } from "./TripleWeaves.tsx";
 const LandingSection = ({ title1, title2, smallText }) => {
   return (
     <>
-      <div className="flex pt-20 flex-row h-screen items-start overflow-hidden bg-gradient-to-b from-[#0661a3] to-[#7fd9e1] section">
+      <div className="flex pt-20 flex-row h-screen items-start overflow-hidden bg-gradient-to-b from-[#0661a3] to-[#7fd9e1] section relative overflow-hidden">
+        <div className="w-80 h-80 absolute -top-16 -left-16 border border-white rounded-full opacity-25" />
+
+        <div
+          className="absolute -top-56 -left-56 border border-white rounded-full opacity-25"
+          style={{ width: "800px", height: "800px" }}
+        />
+        <div
+          className="absolute bottom-16 -right-16 border border-white rounded-full opacity-25"
+          style={{ width: "200px", height: "200px" }}
+        />
         <div className="2xl:w-1/2 w-full text-white h-3/4 pl-8 md:pl-24 2xl:pl-32 items-left flex flex-col justify-center pr-2">
           <h1 className="text-4xl sm:text-5xl 2xl:text-7xl font-nunito font-bold">
             {title1 ? title1 : "Work-Life"}
