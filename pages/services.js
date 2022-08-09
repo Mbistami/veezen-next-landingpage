@@ -18,7 +18,7 @@ export default function Service() {
   return (
     <div className="h-full bg-white  overflow-x-hidden relative">
       <Head>
-        <title>Veezen - Apercu</title>
+        <title>Veezen - Sphères & Services</title>
       </Head>
       <Navbar />
       <div className="relative">
