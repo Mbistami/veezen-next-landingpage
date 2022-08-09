@@ -5,7 +5,7 @@ export const OurClients = () => {
   return (
     <div className="w-full  bg-white">
       <p className="text-[#0662a3] font-bold text-2xl text-center pt-8">
-        OUR CLIENTS
+        NOS CLIENTS
       </p>
       <div className="flex flex-row justify-evenly items-center py-6 px-4 gap-5 flex-wrap">
         <div>

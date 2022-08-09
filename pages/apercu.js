@@ -61,7 +61,7 @@ export default function Home() {
         />
       </div>
       <div className="md:h-screen text-black flex flex-col md:flex-row justify-center pb-10">
-        <div className="md:w-3/4 flex flex-col md:flex-row md:py-52 px-10 md:px-32 font-nunito relative">
+        <div className="md:w-3/4 flex flex-col md:flex-row md:py-52 px-10 md:px-32 font-nunito relative pb-10">
           <div className="absolute w-fit h-fit left-22 top-10">
             <Image
               src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658412790/Group_xxfqxh.png"
@@ -105,9 +105,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute h-36 bottom-0 w-full  flex flex-row justify-end">
-          <div className="w-3/4 bg-[#effafa] flex flex-row items-center justify-evenly px-0">
-            <div className="w-3/4 flex flex-row gap-28">
+        <div className="md:absolute md:h-36 bottom-0 w-full  flex flex-row justify-end">
+          <div className="w-full md:w-3/4 bg-[#effafa] flex flex-col md:flex-row items-center justify-evenly px-0 pt-10 md:pt-0 pb-10 md:pb-0">
+            <div className="w-full  md:w-3/4 flex flex-col md:flex-row gap-28">
               <div className="text-6xl text-center font-bold text-[#3a3a3a]">
                 <CountUp end={320} duration={3} />
                 <p className="text-sm text-center pt-2 text-[#61bfc1] font-nunito font-bold">

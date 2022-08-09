@@ -5,6 +5,7 @@ import {
   Login,
   ArrowDownward,
   ArrowUpward,
+  ViewQuilt,
 } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 
@@ -29,8 +30,7 @@ const Navbar = () => {
     setAnchorEl_(null);
     setOpen_(false);
   };
-  const handleAuthenticationRedirect = () =>
-    window.open("https://authentication.veezen.com", "_self");
+  const handleAuthenticationRedirect = (url) => window.open(url, "_self");
 
   return (
     <div className="flex absolute h-20 flex-row justify-between w-full z-10">
@@ -105,7 +105,9 @@ const Navbar = () => {
       >
         <MenuItem
           className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left"
-          onClick={handleAuthenticationRedirect}
+          onClick={() =>
+            handleAuthenticationRedirect("https://authentication.veezen.com")
+          }
         >
           <Typography className="font-nunito text-sm min-w-[80px]">
             Login
@@ -114,12 +116,23 @@ const Navbar = () => {
         </MenuItem>
         <MenuItem
           className="flex flex-row gap-2 items-center justify-left px-4 py-1 text-left"
-          onClick={handleAuthenticationRedirect}
+          onClick={() =>
+            handleAuthenticationRedirect("https://authentication.veezen.com")
+          }
         >
           <Typography className="font-nunito text-sm min-w-[80px]">
             Register
           </Typography>
           <Login className="w-4 h-4 opacity-70 min-w-[40px]" />
+        </MenuItem>
+        <MenuItem
+          className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left"
+          onClick={() => handleAuthenticationRedirect("/apercu")}
+        >
+          <Typography className="font-nunito text-sm min-w-[80px]">
+            Overview
+          </Typography>
+          <ViewQuilt className="w-4 h-4 opacity-70 min-w-[40px]" />
         </MenuItem>
       </Menu>
     </div>
