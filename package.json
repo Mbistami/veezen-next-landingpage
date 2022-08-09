@@ -17,6 +17,7 @@
     "fullpage.js": "^4.0.10",
     "next": "12.2.4",
     "react": "18.2.0",
+    "react-countup": "^6.3.0",
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-wavify": "^1.6.1",

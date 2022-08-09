@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex absolute h-20 flex-row justify-between w-full">
+    <div className="flex absolute h-20 flex-row justify-between w-full z-10">
       <div className="w-1/3 px-5 py-5">
         <Image
           src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1659314115/unknown_pxeyzx.png"
@@ -54,7 +54,12 @@ const Navbar = () => {
         <div>
           <p>Contactez-Nous</p>
         </div>
-        <div className="rounded-3xl bg-white text-black font-nunito font-bold px-8 py-1 cursor-pointer">
+        <div
+          className="rounded-3xl bg-white text-black font-nunito font-bold px-8 py-1 cursor-pointer"
+          onClick={() =>
+            window.open("https://authentication.veezen.com", "_self")
+          }
+        >
           <button>Inscrivez-vous</button>
         </div>
         <div></div>

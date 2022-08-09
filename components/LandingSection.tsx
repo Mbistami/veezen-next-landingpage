@@ -43,7 +43,7 @@ const LandingSection = ({ title1, title2, smallText }) => {
             </div>
           )}
         </div>
-        {!title1 && (
+        {!title1 ? (
           <div className="2xl:w-1/2 w-0 hidden md:block  h-full overflow-hidden">
             <div className="items-center pt-14 h-full">
               <Image
@@ -55,6 +55,10 @@ const LandingSection = ({ title1, title2, smallText }) => {
                 layout="responsive"
               />
             </div>
+          </div>
+        ) : (
+          <div>
+            <div className="w-3/4 rounded-full absolute bottom-1/2 -translate-y-1/2 -right-72 hidden 2xl:block -rotate-45 h-80 opacity-20  bg-white"></div>
           </div>
         )}
         <TripleWeaves />
