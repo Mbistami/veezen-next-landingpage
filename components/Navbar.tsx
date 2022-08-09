@@ -29,6 +29,8 @@ const Navbar = () => {
     setAnchorEl_(null);
     setOpen_(false);
   };
+  const handleAuthenticationRedirect = () =>
+    window.open("https://authentication.veezen.com", "_self");
 
   return (
     <div className="flex absolute h-20 flex-row justify-between w-full z-10">
@@ -101,13 +103,19 @@ const Navbar = () => {
         open={open}
         className="p-0"
       >
-        <MenuItem className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left">
+        <MenuItem
+          className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left"
+          onClick={handleAuthenticationRedirect}
+        >
           <Typography className="font-nunito text-sm min-w-[80px]">
             Login
           </Typography>
           <Login className="w-4 h-4 opacity-70 min-w-[40px]" />
         </MenuItem>
-        <MenuItem className="flex flex-row gap-2 items-center justify-left px-4 py-1 text-left">
+        <MenuItem
+          className="flex flex-row gap-2 items-center justify-left px-4 py-1 text-left"
+          onClick={handleAuthenticationRedirect}
+        >
           <Typography className="font-nunito text-sm min-w-[80px]">
             Register
           </Typography>
