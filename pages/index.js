@@ -55,7 +55,10 @@ export default function Home() {
       <LandingSection />
       <EventsSlider />
       <OurMission />
-      <div className=" text-black bg-white text-center relative flex flex-row pt-10 sm:pt-36 justify-center">
+      <div
+        id="fields"
+        className=" text-black bg-white text-center relative flex flex-row pt-10 sm:pt-36 justify-center"
+      >
         <div className="w-full px-10 sm:px-15 md:px-20 lg:px-40">
           <h1 className="font-nunito text-2xl font-bold sm:text-5xl">
             Nos sphères d&apos;intervention

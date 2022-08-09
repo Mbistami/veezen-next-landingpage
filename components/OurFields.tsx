@@ -2,7 +2,7 @@ import React from "react";
 
 export const OurFields = ({ title, cards }) => {
   return (
-    <div className="pb-20">
+    <div  className="pb-20">
       <p className="text-left text-[#0662A3] text-xl sm:text-2xl font-nunito pt-5 border-b border-[#0662A3] pb-3">
         {title}
       </p>

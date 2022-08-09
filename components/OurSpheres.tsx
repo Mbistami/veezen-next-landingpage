@@ -4,7 +4,7 @@ import { Group, Shield, List, Face } from "@mui/icons-material";
 
 export const OurSpheres = () => {
   return (
-    <div className="bg-gradient-to-b from-[#2186ad] to-[#9ec3d2] relative pb-10 sm:h-screen">
+    <div id="spheres" className="bg-gradient-to-b from-[#2186ad] to-[#9ec3d2] relative pb-10 sm:h-screen">
       <p className="block pt-10 sm:pt-0 sm:absolute top-20 text-xl sm:left-1/2 sm:-translate-x-1/2 md:translate-x-0 font-nunito font-bold text-center">
         NOS SPHÈRES
       </p>
@@ -43,7 +43,9 @@ export const OurSpheres = () => {
                   <Group className="w-10 h-10" />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold">VeeMeet</h1>
+                  <h1 id="veemeet" className="text-xl font-bold">
+                    VeeMeet
+                  </h1>
                   <div className="text-black">
                     <p>
                       Un réseau international de mentors de renom à votre
