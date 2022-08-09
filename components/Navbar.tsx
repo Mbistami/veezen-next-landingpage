@@ -42,7 +42,7 @@ const Navbar = () => {
           height={80}
         />
       </div>
-      <div className="text-white hidden sm:flex flex-row w-full gap-16 items-center justify-end pr-10 font-nunito">
+      <div className="text-white hidden lg:flex flex-row w-full gap-16 items-center justify-end pr-10 font-nunito whitespace-nowrap">
         <div className="cursor-pointer">
           <p onClick={() => window.open("/", "_self")}>Acceuil</p>
         </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
         <div></div>
       </div>
-      <div className="flex sm:hidden w-16 flex-row justify-center items-center">
+      <div className="flex lg:hidden w-16 flex-row justify-center items-center">
         <IconButton
           onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
             console.log("click");
