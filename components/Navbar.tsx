@@ -51,8 +51,10 @@ const Navbar = () => {
         <div className="cursor-pointer">
           <p onClick={() => window.open("/apercu", "_self")}>Apercu</p>
         </div>
-        <div>
-          <p>Services & Sphères</p>
+        <div className="cursor-pointer">
+          <p onClick={() => window.open("/services", "_self")}>
+            Services & Sphères
+          </p>
         </div>
         <div className="flex flex-row cursor-pointer">
           <p onClick={(e) => handleClick_(e)}>Events</p>

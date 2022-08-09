@@ -48,6 +48,9 @@ export default function Home() {
   ];
   return (
     <div className="h-full bg-white  overflow-x-hidden relative">
+      <Head>
+        <title>Veezen - Apercu</title>
+      </Head>
       <Navbar />
       <div className="relative">
         <LandingSection
