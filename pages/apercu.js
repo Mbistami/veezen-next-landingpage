@@ -52,48 +52,11 @@ export default function Home() {
   return (
     <div className="h-full bg-white">
       <Navbar />
-      <LandingSection />
-      <EventsSlider />
-      <OurMission />
-      <div className=" text-black bg-white text-center relative flex flex-row pt-10 sm:pt-36 justify-center">
-        <div className="w-full px-10 sm:px-15 md:px-20 lg:px-40">
-          <h1 className="font-nunito text-2xl font-bold sm:text-5xl">
-            Nos sphères d&apos;intervention
-          </h1>
-          <div className="absolute w-fit h-fit left-0 top-1/2 -translate-y-1/2">
-            <Image
-              src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658412790/Group_xxfqxh.png"
-              width={200}
-              height={200}
-              alt="square dots"
-            />
-          </div>
-          {Fields.map((e, i) => (
-            <OurFields title={e?.title} cards={e?.cards} key={i} />
-          ))}
-        </div>
-      </div>
-      <OurSpheres />
-      <Explanation />
-      <OurClients />
-      <Footer />
-      <div className="flex flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between text-black py-5 gap-5 sm:px-10 border-t border-gray-200">
-        <div>Copyright © 2022 VEEZEN Powered by VEEZEN</div>
-        <div className="flex flex-row gap-4">
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
-            <Facebook />
-          </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
-            <LinkedIn />
-          </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
-            <Twitter />
-          </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
-            <Facebook />
-          </div>
-        </div>
-      </div>
+      <LandingSection
+        title1="La Plateforme"
+        title2="Veezen"
+        smallText="Votre santé mentale est notre priorité. Nous nous engageons à assurer votre épanouissement ainsi que de vous accompagner pour mieux mener votre vie personnelle et professionnelle."
+      />
     </div>
   );
 }

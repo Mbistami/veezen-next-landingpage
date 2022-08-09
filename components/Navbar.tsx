@@ -1,11 +1,17 @@
 import React, { MouseEvent, useState } from "react";
 import Image from "next/image";
-import { Menu as MenuIcon, Login } from "@mui/icons-material";
+import { Menu as MenuIcon, Login, ArrowDownward } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [open_, setOpen_] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl_, setAnchorEl_] = React.useState<null | HTMLElement>(null);
+  const handleClick_ = (event: any) => {
+    setAnchorEl_(event.currentTarget);
+    setOpen_(true);
+  };
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
     setOpen(true);
@@ -13,6 +19,10 @@ const Navbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
     setOpen(false);
+  };
+  const handleClose_ = () => {
+    setAnchorEl_(null);
+    setOpen_(false);
   };
 
   return (
@@ -25,24 +35,27 @@ const Navbar = () => {
           height={80}
         />
       </div>
-      <div className="text-white hidden sm:flex flex-row w-full justify-between items-center">
-        <div>
-          <p>Acceuil</p>
+      <div className="text-white hidden sm:flex flex-row w-full gap-16 items-center justify-end pr-10">
+        <div className="cursor-pointer">
+          <p onClick={() => window.open("/", "_self")}>Acceuil</p>
+        </div>
+        <div className="cursor-pointer">
+          <p onClick={() => window.open("/apercu", "_self")}>Apercu</p>
         </div>
         <div>
-          <p>Apercu</p>
+          <p>Services & Sphères</p>
+        </div>
+        <div className="flex flex-row cursor-pointer">
+          <p onClick={(e) => handleClick_(e)}>Events</p>
+          <div className="flex flex-row items-center justify-center pl-2">
+            <ArrowDownward className="w-4 h-4" />
+          </div>
         </div>
         <div>
-          <p>Apercu</p>
+          <p>Contactez-Nous</p>
         </div>
-        <div>
-          <p>Apercu</p>
-        </div>
-        <div>
-          <p>Apercu</p>
-        </div>
-        <div>
-          <button>Login</button>
+        <div className="rounded-3xl bg-white text-black font-nunito font-bold px-8 py-1 cursor-pointer">
+          <button>Inscrivez-vous</button>
         </div>
         <div></div>
       </div>
@@ -56,6 +69,18 @@ const Navbar = () => {
           <MenuIcon className="text-white opacity-70" />
         </IconButton>
       </div>
+      <Menu anchorEl={anchorEl_} onClose={handleClose_} open={open_}>
+        <MenuItem className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left">
+          <Typography className="font-nunito text-sm min-w-[80px]">
+            Yoga Event
+          </Typography>
+        </MenuItem>
+        <MenuItem className="flex flex-row gap-2 items-center justify-left px-4 py-1 text-left">
+          <Typography className="font-nunito text-sm min-w-[80px]">
+            Breakfast Event
+          </Typography>
+        </MenuItem>
+      </Menu>
       <Menu
         anchorEl={anchorEl}
         onClose={handleClose}
