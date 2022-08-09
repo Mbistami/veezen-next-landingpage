@@ -1,6 +1,11 @@
 import React, { MouseEvent, useState } from "react";
 import Image from "next/image";
-import { Menu as MenuIcon, Login, ArrowDownward } from "@mui/icons-material";
+import {
+  Menu as MenuIcon,
+  Login,
+  ArrowDownward,
+  ArrowUpward,
+} from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 
 const Navbar = () => {
@@ -48,7 +53,11 @@ const Navbar = () => {
         <div className="flex flex-row cursor-pointer">
           <p onClick={(e) => handleClick_(e)}>Events</p>
           <div className="flex flex-row items-center justify-center pl-2">
-            <ArrowDownward className="w-4 h-4" />
+            {open_ ? (
+              <ArrowDownward className="w-4 h-4" />
+            ) : (
+              <ArrowUpward className="w-4 h-4" />
+            )}
           </div>
         </div>
         <div>
