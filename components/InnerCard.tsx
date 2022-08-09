@@ -7,7 +7,7 @@ export const InnerCard = ({ src, text, title, date }) => {
     <div className="w-full  flex flex-row items-end justify-center">
       <div className=" text-white text-center absolute w-full bottom-1/3 translate-y-1/3">
         <div className="flex flex-col sm:mt-5 items-center">
-          <h1 className="font-nunito text-5xl w-5/6 text-center mb-5 sm:mb-16 ">
+          <h1 className="font-nunito text-2xl md:text-5xl w-5/6 text-center mb-5 sm:mb-16 whitespace-nowrap">
             {title}
           </h1>
           <div className="flex flex-col-reverse sm:flex-row-reverse w-full items-center justify-center gap-10">
@@ -20,7 +20,7 @@ export const InnerCard = ({ src, text, title, date }) => {
                 <GpsFixed className="cursor-pointer" />
               </div>
             </div>
-            <div className="w-64 sm:w-fit rounded-xl overflow-hidden relative">
+            <div className="w-52 md:w-64 sm:w-fit rounded-xl overflow-hidden relative">
               <Image
                 src={src}
                 alt="veezen_interface"

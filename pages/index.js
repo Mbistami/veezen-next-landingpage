@@ -9,7 +9,7 @@ import { Explanation } from "../components/Explanation.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { OurClients } from "../components/OurClients.tsx";
 import Navbar from "../components/Navbar.tsx";
-import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
+import { Facebook, LinkedIn, Twitter, Instagram } from "@mui/icons-material";
 import "swiper/css";
 
 export default function Home() {
@@ -80,17 +80,17 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between text-black py-5 gap-5 sm:px-10 border-t border-gray-200">
         <div>Copyright © 2022 VEEZEN Powered by VEEZEN</div>
         <div className="flex flex-row gap-4">
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
             <Facebook />
           </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
             <LinkedIn />
           </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
             <Twitter />
           </div>
-          <div className="w-8 h-8 bg-green-400 text-white justify-center flex flex-row items-center rounded-lg">
-            <Facebook />
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
+            <Instagram />
           </div>
         </div>
       </div>
