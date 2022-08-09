@@ -2,12 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { OurMission } from "../components/OurMission.tsx";
 import LandingSection from "../components/LandingSection.tsx";
-import { EventsSlider } from "../components/EventsSlider.tsx";
-import { OurFields } from "../components/OurFields.tsx";
-import { OurSpheres } from "../components/OurSpheres.tsx";
-import { Explanation } from "../components/Explanation.tsx";
-import { Footer } from "../components/Footer.tsx";
-import { OurClients } from "../components/OurClients.tsx";
+import { Insights } from "../components/Insights.tsx";
+import { FormatQuote } from "@mui/icons-material";
 import Navbar from "../components/Navbar.tsx";
 import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 import CountUp from "react-countup";
@@ -51,7 +47,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="h-full bg-white overflow-x-hidden relative">
+    <div className="h-full bg-white  overflow-x-hidden relative">
       <Navbar />
       <div className="relative">
         <LandingSection
@@ -60,81 +56,99 @@ export default function Home() {
           smallText="Votre santé mentale est notre priorité. Nous nous engageons à assurer votre épanouissement ainsi que de vous accompagner pour mieux mener votre vie personnelle et professionnelle."
         />
       </div>
-      <div className="md:h-screen text-black flex flex-col md:flex-row justify-center pb-10">
-        <div className="md:w-3/4 flex flex-col md:flex-row md:py-52 px-10 md:px-32 font-nunito relative pb-10">
-          <div className="absolute w-fit h-fit left-22 top-10">
-            <Image
-              src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658412790/Group_xxfqxh.png"
-              width={200}
-              height={200}
-              alt="square dots"
-            />
-          </div>
-          <div className="md:w-1/4 text-[#1dcddd] text-sm tracking-widest text-center">
-            <p>APERCU</p>
-          </div>
-          <div className="md:w-3/4 text-center font-nunito">
-            <p className="font-bold text-2xl text-center pb-10">
-              Le monde du travail moderne pose de nombreux défis aux employés.
-              Alors que certaines carrières permettent une interaction détendue
-              entre le travail et la vie privée, de nombreuses autres
-              professions exigent des sacrifices importants en ce qui concerne
-              la vie familiale et les loisirs.
-            </p>
-            <div className="flex flex-col md:flex-row text-justify gap-10">
-              <div className="md:w-1/2">
-                <p>
-                  Selon une étude réalisée en 2015 par l’institut Coe-Rexecode,
-                  les français sont ceux qui travaillent le moins d’heures en
-                  Europe. Si cette donnée est à relativiser compte-tenu du
-                  nombre important d’emplois à mi-temps, il n’en reste pas moins
-                  que les gens sont de plus en plus en recherche d’un meilleur
-                  équilibre entre vie professionnelle et vie privée.
+      <Insights />
+      <div className="md:h-screen bg-[#effafa] pb-10 justify-center flex flex-row items-center">
+        <div className="w-3/4 text-black h-full flex flex-col md:flex-row">
+          <div className="md:w-1/2 flex flex-col md:flex-row">
+            <div className="w-1/4 hidden md:block">
+              <FormatQuote className="text-[#1dbfc1] rotate-180 w-36 h-36" />
+            </div>
+            <div className="md:w-3/4 flex flex-col gap-10 pt-10 font-nunito">
+              <p className="text-[#45cfde] font-bold">NOTRE ENTREPRISE</p>
+              <h1 className="text-2xl md:text-4xl font-bold ">
+                Une Start-Up en pleine croissance
+              </h1>
+              <div className="font-thin">
+                <p className="text-justify text-md leading-loose">
+                  Le terme « Work-Life balance » appartient au vocabulaire de
+                  base des RH depuis des années déjà. Ce mot à la mode est
+                  utilisé consciemment par les recruteurs pour suggérer aux
+                  collaborateurs potentiels un équilibre entre le travail et la
+                  vie privée. Cependant, la séparation stricte entre le travail
+                  et la vie privée est de plus en plus remise en question : les
+                  frontières s’estompent, vie privée et vie professionnelle se
+                  mélangent et un nouveau terme est en train de s’imposer.
                 </p>
+                <br />
+                <p>Que se cache-t-il derrière ce nouveau concept ?</p>
               </div>
-              <div className="md:w-1/2">
-                <p>
-                  Selon une étude réalisée en 2015 par l’institut Coe-Rexecode,
-                  les français sont ceux qui travaillent le moins d’heures en
-                  Europe. Si cette donnée est à relativiser compte-tenu du
-                  nombre important d’emplois à mi-temps, il n’en reste pas moins
-                  que les gens sont de plus en plus en recherche d’un meilleur
-                  équilibre entre vie professionnelle et vie privée.
+              <p className="font-bold">
+                Tu ne peux pas avoir tout ce que tu veux, mais tu peux avoir les
+                choses qui comptent vraiment pour toi.
+              </p>
+              <div className="text-sm">
+                <p className="font-bold tracking-widest">MARISSA MAYER</p>
+                <p className="font-thin tracking-widest">
+                  Ancien président et PDG de Yahoo
                 </p>
               </div>
             </div>
           </div>
+          <div className="pt-20 hidden md:flex md:pt-0 md:w-1/2 flex-row px-10">
+            <div className="md:pt-36">
+              <Image
+                src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1660030525/famille2_rie4ij.jpg"
+                width={612}
+                height={408}
+                alt="happy family"
+              />
+            </div>
+          </div>
         </div>
-        <div className="md:absolute md:h-36 bottom-0 w-full  flex flex-row justify-end">
-          <div className="w-full md:w-3/4 bg-[#effafa] flex flex-col md:flex-row items-center justify-evenly px-0 pt-10 md:pt-0 pb-10 md:pb-0">
-            <div className="w-full  md:w-3/4 flex flex-col md:flex-row gap-28">
-              <div className="text-6xl text-center font-bold text-[#3a3a3a]">
-                <CountUp end={320} duration={3} />
-                <p className="text-sm text-center pt-2 text-[#61bfc1] font-nunito font-bold">
-                  COLLABORATEURS
+        <div></div>
+      </div>
+      <div className="md:h-screen bg-[white] pb-10 pt-10 justify-center flex flex-row items-center">
+        <div className="w-4/5 text-black h-full flex flex-col md:flex-row">
+          <div className="md:w-1/2 flex flex-col md:flex-row">
+            <div className="md:w-full flex flex-col gap-10 pt-10 font-nunito">
+              <p className="text-[#45cfde] font-bold">SPHÈRES DE VIE</p>
+              <h1 className="text-2xl md:text-4xl font-bold ">
+                VeePro & VeePrivée
+              </h1>
+              <p className="font-nunito font-bold">
+                La pandémie brouille la frontière entre travail et vie privée.
+              </p>
+              <div className="font-thin">
+                <p>Que se cache-t-il derrière ce nouveau concept ?</p>
+                <br />
+                <p className="text-justify text-md leading-loose">
+                  La pandémie et ses cohortes de travailleurs à domicile ont
+                  brouillé un peu plus la frontière entre les deux et méritent
+                  que l’on y porte plus d’attention. L’irruption soudaine du
+                  télétravail dans les foyers oblige à repenser l’équilibre vie
+                  privée-vie professionnelle.
                 </p>
-              </div>
-              <div className="text-6xl text-center font-bold text-[#3a3a3a]">
-                <CountUp end={128} duration={3} />
-                <p className="text-sm text-center pt-2 text-[#61bfc1] font-nunito font-bold">
-                  VEEXPERTS
-                </p>
-              </div>
-              <div className="text-6xl text-center font-bold text-[#3a3a3a]">
-                <CountUp end={24} duration={3} />
-                <p className="text-sm text-center pt-2 text-[#61bfc1] font-nunito font-bold">
-                  ENTREPRISES
-                </p>
-              </div>
-              <div className="text-6xl text-center font-bold text-[#3a3a3a]">
-                <CountUp end={12} duration={3} />
-                <p className="text-sm text-center pt-2 text-[#61bfc1] font-nunito font-bold">
-                  PAYS
+                <br />
+                <p className="text-justify text-md leading-loose">
+                  Le travail à domicile va perdurer, ce qui signifie que les
+                  employés auront besoin d’une meilleure protection et d’une
+                  meilleure WorkLife Harmony.
                 </p>
               </div>
             </div>
           </div>
+          <div className="pt-20 hidden md:flex md:pt-0 md:w-1/2 flex-row px-10">
+            <div className="md:pt-36">
+              <Image
+                src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1660031005/d41586-018-05589-w_15891472-5_w223k4.jpg"
+                width={800}
+                height={602}
+                alt="happy family"
+              />
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     </div>
   );

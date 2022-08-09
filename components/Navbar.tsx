@@ -7,6 +7,7 @@ import {
   ArrowUpward,
   ViewQuilt,
   Home,
+  Input,
 } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 
@@ -142,7 +143,7 @@ const Navbar = () => {
           <Typography className="font-nunito text-sm min-w-[80px]">
             Register
           </Typography>
-          <Login className="w-4 h-4 opacity-70 min-w-[40px]" />
+          <Input className="w-4 h-4 opacity-70 min-w-[40px]" />
         </MenuItem>
       </Menu>
     </div>
