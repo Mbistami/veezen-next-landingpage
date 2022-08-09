@@ -53,7 +53,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-1/4">
+        <div className="md:w-1/4">
           <p className="font-bold text-xl pb-2">Contact</p>
           <ul className="text-md  font-normal gap-2 flex flex-col cursor-pointer ">
             <li className="hover:text-[#1dbfc1] transition-all">
