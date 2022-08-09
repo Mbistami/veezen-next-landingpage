@@ -32,11 +32,13 @@ const LandingSection = ({ title1, title2, smallText }) => {
               </div>
               <div className="flex flex-row gap-2 items-center">
                 <CheckBox />
-                <p className="font-nunito">Bien Être & Performance</p>
+                <p className="font-nunito">
+                  Expertise, Neutralité, Originalité
+                </p>
               </div>
               <div className="flex flex-row gap-2 items-center">
                 <CheckBox />
-                <p className="font-nunito">Bien Être & Performance</p>
+                <p className="font-nunito">Équipe VeeExpert dynamique</p>
               </div>
             </div>
           )}
