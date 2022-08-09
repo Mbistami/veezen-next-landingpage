@@ -35,7 +35,7 @@ const Navbar = () => {
           height={80}
         />
       </div>
-      <div className="text-white hidden sm:flex flex-row w-full gap-16 items-center justify-end pr-10">
+      <div className="text-white hidden sm:flex flex-row w-full gap-16 items-center justify-end pr-10 font-nunito">
         <div className="cursor-pointer">
           <p onClick={() => window.open("/", "_self")}>Acceuil</p>
         </div>
