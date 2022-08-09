@@ -5,8 +5,8 @@ import LandingSection from "../components/LandingSection.tsx";
 import { Insights } from "../components/Insights.tsx";
 import { FormatQuote } from "@mui/icons-material";
 import Navbar from "../components/Navbar.tsx";
-import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
-import CountUp from "react-countup";
+import { Facebook, LinkedIn, Twitter, Instagram } from "@mui/icons-material";
+import { Footer } from "../components/Footer.tsx";
 import "swiper/css";
 
 export default function Home() {
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         <div></div>
       </div>
-      <div className="md:h-screen bg-[white] pb-10 pt-10 justify-center flex flex-row items-center">
+      <div className=" bg-[white] pt-10 justify-center flex flex-row items-center pb-20">
         <div className="w-4/5 text-black h-full flex flex-col md:flex-row">
           <div className="md:w-1/2 flex flex-col md:flex-row">
             <div className="md:w-full flex flex-col gap-10 pt-10 font-nunito">
@@ -137,8 +137,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="pt-20 hidden md:flex md:pt-0 md:w-1/2 flex-row px-10">
-            <div className="md:pt-36">
+          <div className="pt-20 hidden md:flex md:pt-0 md:w-1/2 flex-row px-10 h-fit">
+            <div className="md:pt-36 h-fit">
               <Image
                 src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1660031005/d41586-018-05589-w_15891472-5_w223k4.jpg"
                 width={800}
@@ -149,6 +149,24 @@ export default function Home() {
           </div>
         </div>
         <div></div>
+      </div>
+      <Footer />
+      <div className="flex flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between text-black py-5 gap-5 sm:px-10 border-t border-gray-200">
+        <div>Copyright © 2022 VEEZEN Powered by VEEZEN</div>
+        <div className="flex flex-row gap-4">
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
+            <Facebook />
+          </div>
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
+            <LinkedIn />
+          </div>
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
+            <Twitter />
+          </div>
+          <div className="w-8 h-8  text-[#1dbfc1] justify-center flex flex-row items-center rounded-lg">
+            <Instagram />
+          </div>
+        </div>
       </div>
     </div>
   );
