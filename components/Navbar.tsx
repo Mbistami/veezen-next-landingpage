@@ -67,8 +67,10 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div>
-          <p>Contactez-Nous</p>
+        <div className="cursor-pointer">
+          <p onClick={() => window.open("/contact-us", "_self")}>
+            Contactez-Nous
+          </p>
         </div>
         <div
           className="rounded-3xl bg-white text-black font-nunito font-bold px-8 py-1 cursor-pointer"
