@@ -47,12 +47,12 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="w-3/4 flex flex-col lg:flex-row justify-center items-center ">
-          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-evenly font-nunito">
-            <div className=" text-[#32bfc1]">
+        <div className="w-5/6 flex flex-col lg:flex-row justify-center items-center gap-2">
+          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-center items-center md:items-start md:justify-between h-full font-nunito">
+            <div className="h-1/4 flex flex-row justify-left items-center text-[#32bfc1]">
               <Handshake className="w-8 h-8" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="h-3/4 flex flex-col gap-4">
               <h1 className="font-bold text-2xl">VeeMeet</h1>
               <p className="leading-relaxed">
                 Un réseau de mentors international au service de vos
@@ -60,22 +60,22 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-evenly font-nunito">
-            <div className=" text-[#32bfc1]">
+          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-center items-center md:items-start md:justify-between h-full font-nunito">
+            <div className="h-1/4 flex flex-row justify-left items-center text-[#32bfc1]">
               <FormatListBulleted className="w-8 h-8" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="h-3/4 flex flex-col gap-4">
               <h1 className="font-bold text-2xl">VeeBox</h1>
               <p className="leading-relaxed">
                 Des boites à outils prêtes à l&apos;emploi.
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-evenly font-nunito">
-            <div className=" text-[#32bfc1]">
+          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-center items-center md:items-start md:justify-between h-full font-nunito">
+            <div className="h-1/4 flex flex-row justify-left items-center text-[#32bfc1]">
               <Chat className="w-8 h-8" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="h-3/4 flex flex-col gap-4">
               <h1 className="font-bold text-2xl">VeeSurvey</h1>
               <p className="leading-relaxed">
                 Des enquêtes collaborateurs pour établir votre Baromètre
@@ -83,11 +83,11 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-evenly font-nunito">
-            <div className=" text-[#32bfc1]">
+          <div className="w-full md:w-1/2 lg:w-1/4 border border-gray-200 px-6 py-4 gap-2 flex flex-col min-h-[250px] justify-center items-center md:items-start md:justify-between h-full font-nunito">
+            <div className="h-1/4 flex flex-row justify-left items-center text-[#32bfc1]">
               <Headphones className="w-8 h-8" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="h-3/4 flex flex-col gap-4">
               <h1 className="font-bold text-2xl">VeeAssistant</h1>
               <p className="leading-relaxed">
                 Un assistant virtuel disponible à tout moment pour vos
