@@ -8,6 +8,7 @@ import {
   ViewQuilt,
   Home,
   Input,
+  PanoramaPhotosphere,
 } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
 
@@ -124,6 +125,15 @@ const Navbar = () => {
             Apercu
           </Typography>
           <ViewQuilt className="w-4 h-4 opacity-70 min-w-[40px]" />
+        </MenuItem>
+        <MenuItem
+          className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left"
+          onClick={() => handleAuthenticationRedirect("/services")}
+        >
+          <Typography className="font-nunito text-sm min-w-[80px] whitespace-nowrap">
+            Services &<br /> Sphères
+          </Typography>
+          <PanoramaPhotosphere className="w-4 h-4 opacity-70 min-w-[40px]" />
         </MenuItem>
         <MenuItem
           className="flex flex-row gap-2 items-center justify-left px-4 py-1 min-w-[130px] text-left"
