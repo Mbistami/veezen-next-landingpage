@@ -32,9 +32,37 @@ const ContactUs = () => {
           smallText="Nos VeeXperts sont là pour vous et vous accompagnent dans vos challenges quotidiens de VeePro et VeePerso."
         />
       </div>
-      <div className="w-full text-center lg:h-screen text-black flex flex-row justify-center items-center gap-16 pb-10 bg-[#effafa]">
+      <div className="w-full flex flex-col lg:flex-row min-h-[600px] relative items-center justify-center">
+        <div className="w-1/2 max-h-[400px] max-w-[400px] items-center">
+          <Image
+            src="https://res.cloudinary.com/dmntdw6z3/image/upload/v1658414099/photo-principale_1_ih1bq3.png"
+            width={600}
+            height={600}
+            alt="VEEZEN LOGO"
+            layout="responsive"
+          />
+        </div>
+        <div className="lg:w-1/2 flex flex-row justify-center pt-8 lg:pt-0">
+          <div className="1/2">
+            <FormatQuote className="text-[#1dbfc1] rotate-180 w-28 h-28" />
+          </div>
+          <div className="w-1/2 font-nunito text-black flex flex-col gap-10">
+            <p className="text-[#4a4a4a] text-2xl font-bold">
+              « Nous devons faire un meilleur travail pour nous mettre plus haut
+              sur notre propre liste de choses à faire. »{" "}
+            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-black font-black text-xs font-nunito tracking-widest">
+                MICHELLE OBAMA
+              </p>
+              <p className="text-xs ">Former First Lady</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full text-center lg:h-screen text-black flex flex-col lg:flex-row justify-center items-center gap-16 pb-10 pt-10 lg:pt-0 bg-[#effafa]">
         <div className="w-1/2 flex flex-row justify-end items-right">
-          <div className="w-3/4 flex flex-col gap-16">
+          <div className="lg:w-3/4 flex flex-col gap-16">
             <div className="justify-center items-center flex flex-col font-nunito">
               <LocationOn className="text-[#1dbfc1]" />
               <p className="text-xs font-bold tracking-widest mt-5 mb-2 ">
@@ -75,10 +103,12 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex h-full flex-row justify-start items-center">
-          <div className="w-3/4 bg-white flex flex-col text-left h-full items-center justify-center gap-4 px-8 py-5">
+        <div className="w-full lg:w-1/2 flex h-full flex-row justify-center lg:justify-start items-center px-5 lg:px-0">
+          <div className="lg:w-3/4 bg-white flex flex-col text-left h-full items-center justify-center gap-4 px-8 py-5 font-nunito">
             <div className="w-full">
-              <p className="">Nom*</p>
+              <p className="">
+                Nom<span className="text-red-600">*</span>
+              </p>
               <div className="flex flex-row w-full justify-between gap-5">
                 <TextField
                   placeholder="First name"
@@ -94,108 +124,40 @@ const ContactUs = () => {
             </div>
 
             <div className="w-full">
-              <p className="">Email*</p>
-              <TextField size="small" placeholder="" className="w-full" />
+              <p className="">
+                Email<span className="text-red-600">*</span>
+              </p>
+              <TextField
+                size="small"
+                placeholder="example@veezen.com"
+                className="w-full"
+              />
             </div>
             <div className="w-full">
-              <p className="">Sujet*</p>
-              <TextField size="small" placeholder="" className="w-full" />
+              <p className="">
+                Sujet<span className="text-red-600">*</span>
+              </p>
+              <TextField size="small" placeholder="Title" className="w-full" />
             </div>
             <div className="w-full">
-              <p className="">Sujet*</p>
+              <p className="">
+                Message <span className="text-red-600">*</span>
+              </p>
               <TextField
                 size="small"
                 multiline
                 minRows={5}
-                placeholder=""
+                placeholder="Votre message..."
                 className="w-full"
               />
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="lg:h-screen bg-[#effafa] flex flex-row justify-center">
-        <div className="w-1/2 flex flex-col font-nunito py-10 gap-5 text-center lg:text-left ">
-          <p className="tracking-widest text-sm text-[#1dc5d3]">
-            NOS SPHERES D&apos;INTERVENTION
-          </p>
-          <h1 className="text-4xl font-bold text-black">
-            La frontière entre les sphères de VeePro et VeePrivée s&apos;estompe
-          </h1>
-          <div className="text-black flex flex-col lg:flex-row flex-wrap font-nunito gap-y-8 pt-10 lg:pt-28 text-center lg:text-left ">
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                01.
-              </p>
-              <p className="font-bold text-xl">Carrière</p>
-              <p className="text-sm leading-relaxed">
-                Nous accompagnons vos collaborateurs pour une gestion de
-                carrière anticipative et proactive à la mesure de leurs
-                ambitions.
-              </p>
-            </div>
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                02.
-              </p>
-              <p className="font-bold text-xl">Compétences</p>
-              <p className="text-sm leading-relaxed">
-                Vos collaborateurs évoluent, leurs compétences aussi. Nous
-                améliorons leurs compétences professionnelles pour une meilleure
-                évolution au sein de leurs entreprises.
-              </p>
-            </div>
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                03.
-              </p>
-              <p className="font-bold text-xl">Women & Charge Mentale</p>
-              <p className="text-sm leading-relaxed">
-                Nous offrons une aide ciblée aux femmes pour les aider à réduire
-                leur charge mentale, de façon générale et pendant les périodes
-                pré et post maternité.
-              </p>
-            </div>
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                04.
-              </p>
-              <p className="font-bold text-xl">Couple</p>
-              <p className="text-sm leading-relaxed">
-                Le couple est au cœur de la vie d’un individu et fait partie
-                intégrante de son WorkLife Harmony. L’objectif de Veezen est de
-                permettre à vos collaborateurs de vivre une vie de couple plus
-                épanouie.
-              </p>
-            </div>
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                05.
-              </p>
-              <p className="font-bold text-xl">Famille</p>
-              <p className="text-sm leading-relaxed">
-                L’harmonisation des deux grandes sphères de vies que sont le
-                travail et la vie personnelle peut être source de conflits
-                d’horaires et de rôles. Pourtant, il est essentiel de trouver
-                l’équilibre entre les deux, sans quoi on risque d’y laisser une
-                partie de sa santé physique et mentale. Accompagner les
-                collaborateurs dans leur rôle de parent est aussi fondamental.
-              </p>
-            </div>
-            <div className="lg:w-1/3 flex flex-col gap-2">
-              <p className=" text-[#1dc5d3] tracking-widest text-xs font-bold">
-                06.
-              </p>
-              <p className="font-bold text-xl">Sport & Nutrition</p>
-              <p className="text-sm leading-relaxed">
-                Un accompagnement personnalisé pour éviter le burn-out et les
-                maladies chroniques : un corps sain est à la base de notre
-                approche.
-              </p>
+            <div className="px-4 py-2 font-nunito border border-[#1dbfc1] bg-white rounded-lg hover:bg-[#1dbfc1] hover:text-white transition-all cursor-pointer">
+              <p>Send message</p>
             </div>
           </div>
         </div>
       </div>
+
       <OurClients />
       <Footer />
     </div>
