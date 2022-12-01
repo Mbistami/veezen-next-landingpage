@@ -2,6 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## What is it?
 
-This is a landing page example made from scratch here is the (preview)[https://dev.veezen.com/]
+This is a landing page example made from scratch here is the [preview](https://dev.veezen.com/).
 
 completely free to use.
